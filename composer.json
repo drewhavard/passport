@@ -33,7 +33,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Passport\\": "src/"
+            "DrewHavard\\Passport\\": "src/"
         }
     },
     "extra": {
@@ -42,7 +42,7 @@
         },
         "laravel": {
             "providers": [
-                "Laravel\\Passport\\PassportServiceProvider"
+                "DrewHavard\\Passport\\PassportServiceProvider"
             ]
         }
     },
