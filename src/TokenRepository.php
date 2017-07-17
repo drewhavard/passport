@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Passport;
+namespace DrewHavard\Passport;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Passport\Http\Middleware;
+namespace DrewHavard\Passport\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Response;

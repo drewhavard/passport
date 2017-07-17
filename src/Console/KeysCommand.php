@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Passport\Console;
+namespace DrewHavard\Passport\Console;
 
 use phpseclib\Crypt\RSA;
 use Laravel\Passport\Passport;

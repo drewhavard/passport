@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Passport\Guards;
+namespace DrewHavard\Passport\Guards;
 
 use Exception;
 use Firebase\JWT\JWT;

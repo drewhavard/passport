@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Passport\Bridge;
+namespace DrewHavard\Passport\Bridge;
 
 use DateTime;
 use Laravel\Passport\TokenRepository;
