@@ -1,6 +1,6 @@
 <?php
 
-namespace Simplicity;
+namespace DrewHavard\Passport;
 
 use Webpatser\Uuid\Uuid;
 
