@@ -109,7 +109,7 @@ class Passport
 
         $defaultOptions = [
             'prefix' => 'oauth',
-            'namespace' => '\Laravel\Passport\Http\Controllers',
+            'namespace' => '\DrewHavard\Passport\Http\Controllers',
         ];
 
         $options = array_merge($defaultOptions, $options);

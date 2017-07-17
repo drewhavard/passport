@@ -4,7 +4,7 @@ namespace DrewHavard\Passport\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Laravel\Passport\ClientRepository;
+use DrewHavard\Passport\ClientRepository;
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 
 class ClientController
@@ -12,7 +12,7 @@ class ClientController
     /**
      * The client repository instance.
      *
-     * @var \Laravel\Passport\ClientRepository
+     * @var \DrewHavard\Passport\ClientRepository
      */
     protected $clients;
 
@@ -26,7 +26,7 @@ class ClientController
     /**
      * Create a client controller instance.
      *
-     * @param  \Laravel\Passport\ClientRepository  $clients
+     * @param  \DrewHavard\Passport\ClientRepository  $clients
      * @param  \Illuminate\Contracts\Validation\Factory  $validation
      * @return void
      */
@@ -73,7 +73,7 @@ class ClientController
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  string  $clientId
-     * @return \Illuminate\Http\Response|\Laravel\Passport\Client
+     * @return \Illuminate\Http\Response|\DrewHavard\Passport\Client
      */
     public function update(Request $request, $clientId)
     {

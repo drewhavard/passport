@@ -2,7 +2,7 @@
 
 namespace DrewHavard\Passport\Http\Controllers;
 
-use Laravel\Passport\Passport;
+use DrewHavard\Passport\Passport;
 
 class ScopeController
 {

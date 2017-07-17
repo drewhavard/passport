@@ -2,7 +2,7 @@
 
 namespace DrewHavard\Passport\Bridge;
 
-use Laravel\Passport\Passport;
+use DrewHavard\Passport\Passport;
 use League\OAuth2\Server\Entities\ClientEntityInterface;
 use League\OAuth2\Server\Repositories\ScopeRepositoryInterface;
 

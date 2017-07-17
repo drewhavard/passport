@@ -3,7 +3,7 @@
 namespace DrewHavard\Passport\Console;
 
 use phpseclib\Crypt\RSA;
-use Laravel\Passport\Passport;
+use DrewHavard\Passport\Passport;
 use Illuminate\Console\Command;
 
 class KeysCommand extends Command

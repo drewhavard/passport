@@ -4,7 +4,7 @@ namespace DrewHavard\Passport\Http\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;
-use Laravel\Passport\Bridge\User;
+use DrewHavard\Passport\Bridge\User;
 
 trait RetrievesAuthRequestFromSession
 {
