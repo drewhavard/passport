@@ -13,10 +13,11 @@ class CreateOauthPersonalAccessClientsTable extends Migration
      */
     public function up()
     {
-        Schema::create('oauth_personal_access_clients', function (Blueprint $table) {
-            $table->increments('id');
+        Schema::connection('mssql')->create('oauth_personal_access_clients', function (Blueprint $table) {
+            $table->uuid('id');
             $table->integer('client_id')->index();
             $table->timestamps();
+            $table->primary('id');
         });
     }
 
@@ -27,6 +28,6 @@ class CreateOauthPersonalAccessClientsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('oauth_personal_access_clients');
+        Schema::connection('mssql')->drop('oauth_personal_access_clients');
     }
 }

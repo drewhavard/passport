@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class PersonalAccessClient extends Model
 {
+    use UuidForKey;
+
+    protected $connection = 'mssql';
+
     /**
      * The database table used by the model.
      *

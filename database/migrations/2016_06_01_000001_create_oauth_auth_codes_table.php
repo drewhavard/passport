@@ -13,10 +13,10 @@ class CreateOauthAuthCodesTable extends Migration
      */
     public function up()
     {
-        Schema::create('oauth_auth_codes', function (Blueprint $table) {
+        Schema::connection('mssql')->create('oauth_auth_codes', function (Blueprint $table) {
             $table->string('id', 100)->primary();
-            $table->integer('user_id');
-            $table->integer('client_id');
+            $table->uuid('user_id');
+            $table->uuid('client_id');
             $table->text('scopes')->nullable();
             $table->boolean('revoked');
             $table->dateTime('expires_at')->nullable();
@@ -30,6 +30,6 @@ class CreateOauthAuthCodesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('oauth_auth_codes');
+        Schema::connection('mssql')->drop('oauth_auth_codes');
     }
 }
