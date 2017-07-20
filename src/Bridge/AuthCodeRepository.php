@@ -25,7 +25,7 @@ class AuthCodeRepository implements AuthCodeRepositoryInterface
      */
     public function __construct(Connection $database)
     {
-        $this->database = $database;
+        $this->database = DB::connection('mssql');
     }
 
     /**

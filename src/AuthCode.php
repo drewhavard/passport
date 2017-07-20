@@ -8,6 +8,8 @@ class AuthCode extends Model
 {
     use UuidForKey;
 
+    public $incrementing = false;
+
     protected $connection = 'mssql';
 
     /**
