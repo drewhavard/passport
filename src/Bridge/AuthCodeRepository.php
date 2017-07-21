@@ -5,6 +5,7 @@ namespace DrewHavard\Passport\Bridge;
 use Illuminate\Database\Connection;
 use League\OAuth2\Server\Entities\AuthCodeEntityInterface;
 use League\OAuth2\Server\Repositories\AuthCodeRepositoryInterface;
+use DB;
 
 class AuthCodeRepository implements AuthCodeRepositoryInterface
 {

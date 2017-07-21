@@ -7,6 +7,7 @@ use Illuminate\Contracts\Events\Dispatcher;
 use DrewHavard\Passport\Events\RefreshTokenCreated;
 use League\OAuth2\Server\Entities\RefreshTokenEntityInterface;
 use League\OAuth2\Server\Repositories\RefreshTokenRepositoryInterface;
+use DB;
 
 class RefreshTokenRepository implements RefreshTokenRepositoryInterface
 {
@@ -45,7 +46,7 @@ class RefreshTokenRepository implements RefreshTokenRepositoryInterface
     {
         $this->events = $events;
         $this->tokens = $tokens;
-        $this->database = $database;
+        $this->database = DB::connection('mssql');
     }
 
     /**

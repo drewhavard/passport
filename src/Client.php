@@ -41,6 +41,7 @@ class Client extends Model
      * @var array
      */
     protected $casts = [
+        'id' => 'string',
         'personal_access_client' => 'bool',
         'password_client' => 'bool',
         'revoked' => 'bool',

@@ -8,8 +8,6 @@ class PersonalAccessClient extends Model
 {
     use UuidForKey;
 
-    public $incrementing = false;
-
     protected $connection = 'mssql';
 
     /**
